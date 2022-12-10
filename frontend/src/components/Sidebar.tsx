@@ -22,7 +22,7 @@ export default function Sidebar() {
     return +time.substring(0, 2) * 60 + +time.substring(3, 5)
   }
   const minutesToTime = (minutes: number) => {
-    const hours = Math.round(minutes / 60)
+    const hours = Math.floor(minutes / 60)
     const min = minutes % 60
     return `${String(hours).padStart(2, '0')}:${String(min).padStart(2, '0')}`
   }
