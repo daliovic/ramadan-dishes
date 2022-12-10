@@ -1,0 +1,11 @@
+.header {
+  height: 80px;
+  margin-bottom: 50px;
+}
+.header h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #574747;
+}

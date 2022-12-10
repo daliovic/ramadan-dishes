@@ -1,0 +1,30 @@
+.search-form button[type='submit'] {
+  height: 60px;
+  background: #987744;
+  border-radius: 80px;
+  border: none;
+  color: white;
+  width: 25%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+}
+
+.search-calendar {
+  width: 25%;
+  position: relative;
+  /* padding: 0 45px; */
+  border-radius: 200px;
+  background: #f8f7ec;
+  cursor: pointer;
+}
+.search-form {
+  gap: 45px;
+  margin-bottom: 35px;
+}
+.search-calendar .calendar-icon {
+  position: absolute;
+  right: 40px;
+  pointer-events: none;
+}

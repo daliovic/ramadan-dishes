@@ -1,0 +1,8 @@
+.main-container {
+    padding: 80px;
+    height: 100%;
+}
+
+.main-container .page {
+    height: calc(100% - 100px);
+}

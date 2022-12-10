@@ -1,0 +1,84 @@
+.sidebar {
+  max-width: 550px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px 2px rgba(224, 222, 198, 0.4);
+  border-radius: 40px;
+  object-fit: cover;
+  margin-left: 45px;
+  overflow: hidden;
+  padding: 60px 35px;
+  position: relative;
+}
+.sidebar .background-image {
+  width: 100%;
+  /* height: 100%; */
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  /* background: #e5dccf; */
+}
+
+.current-time {
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #574747;
+  margin-bottom: 28px;
+}
+.current-day {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.75px;
+  color: #574747;
+  margin-bottom: 0px;
+}
+.current-date {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.75px;
+  color: #574747;
+  margin-bottom: 28px;
+}
+.next-prayer-label {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #574747;
+  margin-bottom: 10px;
+}
+.next-prayer-time {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: #08866f;
+  margin-bottom: 10px;
+}
+.next-prayer-time-left {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: #08866f;
+  margin-bottom: 30px;
+}
+.prayer-time {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #987644;
+  border-bottom: solid 2px #987644;
+  margin-bottom: 24px;
+}

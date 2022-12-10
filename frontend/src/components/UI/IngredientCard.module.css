@@ -1,0 +1,16 @@
+.ingredient-card {
+  width: 100px;
+  object-fit: cover;
+}
+
+.ingredient-card p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: #987644;
+}
+.ingredient-card img {
+  width: 72px;
+  height: 72px;
+}

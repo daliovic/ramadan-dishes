@@ -1,0 +1,21 @@
+.search-bar {
+  height: 60px;
+  border-radius: 30px;
+  background: #f8f7ec;
+  padding-left: 25px;
+}
+
+.search-bar input {
+  outline: none;
+  border: none;
+  width: 100%;
+  background: none;
+  margin-left: 10px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+
+  color: #574747;
+}

@@ -1,0 +1,14 @@
+GET http://localhost:3000/cooktime?ingredient=meat&day=12
+
+###
+
+GET http://localhost:3000/suggest?day=5
+
+
+###
+
+GET http://localhost:3000/axios?day=10
+
+###
+
+GET http://localhost:3000/getPrayerTimes
