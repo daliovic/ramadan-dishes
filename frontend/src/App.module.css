@@ -1,8 +1,30 @@
 .main-container {
-    padding: 80px;
-    height: 100%;
+  padding: 80px;
+  height: 100%;
 }
 
 .main-container .page {
-    height: calc(100% - 100px);
+  height: calc(100% - 100px);
+}
+.main-container h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: #574747;
+  margin-bottom: 25px;
+}
+
+.main-container img {
+  width: 200px;
+}
+.main-container img:hover {
+  animation-name: pan-move;
+  animation-duration: 2s;
+}
+@keyframes pan-move {
+  0%   {transform: translateX(0px) translateY(0px);}
+  25%  {transform: translateX(-20px) translateY(-20px);}
+  75%  {transform: translateX(20px) translateY(-25px);}
+  100% {transform: translateX(0px) translateY(0px);}
 }

@@ -28,8 +28,7 @@ export default function Sidebar() {
   }
 
   const getNextPrayer = () => {
-    const currentTimeInMinutes
-     = timeToMinutes(
+    const currentTimeInMinutes = timeToMinutes(
       currentTime.toLocaleTimeString('en-GB', {
         hour: '2-digit',
         minute: '2-digit',
@@ -40,11 +39,12 @@ export default function Sidebar() {
     let i = prayerTimesArray.length - 1
     let currentPrayerTimeInMinutes = timeToMinutes(prayerTimesArray[i][1])
     setTimeLeftNextPrayer(24 * 60 - currentTimeInMinutes + timeToMinutes(prayerTimesArray[0][1]))
+    setNextPrayer(Object.entries(prayerTimes)[0][0])
 
+    
     let timeDiff = currentTimeInMinutes - currentPrayerTimeInMinutes
 
     while (timeDiff < 0 && i > 0) {
-
       i--
 
       currentPrayerTimeInMinutes = timeToMinutes(prayerTimesArray[i][1])
@@ -79,16 +79,15 @@ export default function Sidebar() {
 
   useEffect(() => {
     if (!(prayerTimes.Asr === '...')) getNextPrayer()
-  }, [prayerTimes])
+  }, [prayerTimes, currentTime])
 
   return (
     <aside className={`${s['sidebar']} d-flex col-4 flex-column`}>
       <p className={`${s['current-time']}`}>
-        {currentTime
-          .toLocaleTimeString('en-GB', {
-            hour: '2-digit',
-            minute: '2-digit',
-          })}
+        {currentTime.toLocaleTimeString('en-GB', {
+          hour: '2-digit',
+          minute: '2-digit',
+        })}
       </p>
       <p className={`${s['current-day']}`}>{currentTime.toLocaleDateString('en-GB', { weekday: 'long' })}</p>
       <p className={`${s['current-date']}`}>

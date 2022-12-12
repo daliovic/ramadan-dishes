@@ -1,6 +1,20 @@
 .ingredient-card {
   width: 100px;
   object-fit: cover;
+  margin-right: 0;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+}
+.ingredient-card:hover:not(:first-child) {
+  margin-right: 30px;
+  /* margin-left: 10px; */
+  filter: drop-shadow(0px 4px 6px hsl(36, 38%, 43%, 0.4));
+  transition: all 0.8s ease-in-out;
+}
+.ingredient-card:hover:first-child {
+  margin-right: 30px;
+  filter: drop-shadow(0px 4px 6px hsl(36, 38%, 43%, 0.4));
+  transition: all 0.8s ease-in-out;
 }
 
 .ingredient-card p {
@@ -8,7 +22,7 @@
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.25px;
-  color: #987644;
+  color: hsl(36, 38%, 43%);
 }
 .ingredient-card img {
   width: 72px;
