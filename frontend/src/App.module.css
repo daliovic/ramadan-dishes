@@ -15,7 +15,7 @@
   margin-bottom: 25px;
 }
 
-.main-container img {
+/* .main-container img {
   width: 200px;
 }
 .main-container img:hover {
@@ -27,4 +27,4 @@
   25%  {transform: translateX(-20px) translateY(-20px);}
   75%  {transform: translateX(20px) translateY(-25px);}
   100% {transform: translateX(0px) translateY(0px);}
-}
+} */

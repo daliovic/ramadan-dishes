@@ -128,7 +128,7 @@ router.get('/getPrayerTimes', (req, res) => {
     const currentDay = currentDate.getDate()
     const currentMonth = String(currentDate.getUTCMonth() + 1).padStart(2, '0')
     const currentYear = currentDate.getUTCFullYear()
-    console.log(currentDay)
+    // console.log(currentDay)
 
     axios
       .get(

@@ -13,7 +13,7 @@ import panIcon from './assets/grahpics/pan elements/pan.svg'
 function App() {
   return (
     <div className={`${s['main-container']}`}>
-      {/* <Header />
+      <Header />
       <div className={`${s['page']} d-flex`}>
         <div className='d-flex flex-column col-8'>
           <SearchContainer />
@@ -26,8 +26,8 @@ function App() {
           <RecipesContainer />
         </div>
         <Sidebar />
-      </div> */}
-      <img src={panIcon} />
+      </div>
+      {/* <img src={panIcon} /> */}
     </div>
   )
 }
