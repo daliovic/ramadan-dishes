@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import s from './Sidebar.module.css'
-import mosque from '../assets/grahpics/mosque-vector.svg'
+import mosque from '../../assets/grahpics/mosque-vector.svg'
 import axios from 'axios'
+import { minutesToTime, timeToMinutes } from '../../Utils/utils'
 const DEFAULT_PRAYER_TIMES = {
   Asr: '...',
   Dhuhr: '...',
@@ -18,14 +19,7 @@ export default function Sidebar() {
   const [nextPrayer, setNextPrayer] = useState('Fajr')
   const [timeLeftNextPrayer, setTimeLeftNextPrayer] = useState(0)
 
-  const timeToMinutes = (time: string) => {
-    return +time.substring(0, 2) * 60 + +time.substring(3, 5)
-  }
-  const minutesToTime = (minutes: number) => {
-    const hours = Math.floor(minutes / 60)
-    const min = minutes % 60
-    return `${String(hours).padStart(2, '0')}:${String(min).padStart(2, '0')}`
-  }
+
 
   const getNextPrayer = () => {
     const currentTimeInMinutes = timeToMinutes(
@@ -41,7 +35,6 @@ export default function Sidebar() {
     setTimeLeftNextPrayer(24 * 60 - currentTimeInMinutes + timeToMinutes(prayerTimesArray[0][1]))
     setNextPrayer(Object.entries(prayerTimes)[0][0])
 
-    
     let timeDiff = currentTimeInMinutes - currentPrayerTimeInMinutes
 
     while (timeDiff < 0 && i > 0) {
@@ -63,8 +56,6 @@ export default function Sidebar() {
     axios
       .get('http://localhost:3000/getPrayerTimes')
       .then((data) => {
-        // console.log(data.data)
-
         let tempPrayers: any = {}
         Object.keys(data.data).forEach((prayer) => {
           if (Object.keys(DEFAULT_PRAYER_TIMES).includes(prayer)) {

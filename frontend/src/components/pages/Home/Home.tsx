@@ -1,6 +1,6 @@
 import React from 'react'
-import HomeIngredientsContainer from '../HomeIngredientsContainer'
-import RecipesContainer from '../RecipesContainer'
+import HomeIngredientsContainer from './HomeIngredientsContainer'
+import RecipesContainer from '../../UI/RecipesContainer'
 import s from './Home.module.css'
 
 export default function Home() {

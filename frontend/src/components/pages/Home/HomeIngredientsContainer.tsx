@@ -1,11 +1,11 @@
 import React from 'react'
-import CarrotImg from '../assets/grahpics/images/ingredients/Carrot.png'
-import OnionImg from '../assets/grahpics/images/ingredients/Onion.png'
-import ParsleyImg from '../assets/grahpics/images/ingredients/Parsley.png'
-import RiceImg from '../assets/grahpics/images/ingredients/Rice.png'
-import TunaImg from '../assets/grahpics/images/ingredients/Tuna.png'
-import TomatoPasteImg from '../assets/grahpics/images/ingredients/Tomato Paste.png'
-import IngredientCard from './UI/IngredientCard'
+import CarrotImg from '../../../assets/grahpics/images/ingredients/Carrot.png'
+import OnionImg from '../../../assets/grahpics/images/ingredients/Onion.png'
+import ParsleyImg from '../../../assets/grahpics/images/ingredients/Parsley.png'
+import RiceImg from '../../../assets/grahpics/images/ingredients/Rice.png'
+import TunaImg from '../../../assets/grahpics/images/ingredients/Tuna.png'
+import TomatoPasteImg from '../../../assets/grahpics/images/ingredients/Tomato Paste.png'
+import IngredientCard from '../../UI/IngredientCard'
 import s from './HomeIngredientsContainer.module.css'
 
 const INGREDIENTS = [

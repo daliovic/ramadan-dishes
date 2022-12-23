@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Lottie from 'react-lottie'
-import cookingAnim from '../../assets/animations/CookingAnim.json'
+import cookingAnim from '../../../assets/animations/CookingAnim.json'
 
 function CookingAnimation() {
   const defaultOptions = {
@@ -13,13 +13,7 @@ function CookingAnimation() {
   }
   const ref = React.useRef(null)
 
-  return (
-    <Lottie
-      options={defaultOptions}
-      ref={ref}
-      isClickToPauseDisabled
-    />
-  )
+  return <Lottie options={defaultOptions} ref={ref} isClickToPauseDisabled />
 }
 
 export default CookingAnimation

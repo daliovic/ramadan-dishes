@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
-import SearchBar from './UI/SearchBar'
+import SearchBar from './SearchBar'
 import s from './SearchContainer.module.css'
 // @ts-expect-error
 import DatePicker from 'react-datepicker'
-import calendarIcon from '../assets/grahpics/Calendar icon.png'
+import calendarIcon from '../../../assets/grahpics/Calendar icon.png'
 
 import 'react-datepicker/dist/react-datepicker.css'
 export default function SearchContainer() {

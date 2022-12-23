@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import s from './App.module.css'
-import Home from './components/pages/Home'
-import RecipesContainer from './components/RecipesContainer'
-import SearchContainer from './components/SearchContainer'
-import Sidebar from './components/Sidebar'
+import Home from './components/pages/Home/Home'
+import RecipesContainer from './components/UI/RecipesContainer'
+import SearchContainer from './components/shared/search/SearchContainer'
+import Sidebar from './components/shared/Sidebar'
 import Header from './components/UI/Header'
 import RecipeCard from './components/UI/RecipeCard'
-import SearchBar from './components/UI/SearchBar'
+import SearchBar from './components/shared/search/SearchBar'
 import panIcon from './assets/grahpics/pan elements/pan.svg'
 
 function App() {

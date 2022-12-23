@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './SearchBar.module.css'
-import searchIcon from '../../assets/grahpics/search-icon.svg'
+import searchIcon from '../../../assets/grahpics/search-icon.svg'
 // import searchIcon from 'https://www.svgrepo.com/download/331705/cdn.svg'
 export default function SearchBar() {
   return (

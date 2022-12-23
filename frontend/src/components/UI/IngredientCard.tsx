@@ -1,5 +1,5 @@
 import React from 'react'
-import CookingAnimation from './CookingAnimation'
+import CookingAnimation from './animations/CookingAnimation'
 import s from './IngredientCard.module.css'
 export default function IngredientCard({ name, image }: { name: string; image: string }) {
   return (

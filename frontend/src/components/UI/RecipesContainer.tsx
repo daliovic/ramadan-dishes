@@ -1,8 +1,8 @@
 import React from 'react'
-import RecipeCard from './UI/RecipeCard'
+import RecipeCard from '../UI/RecipeCard'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import s from './RecipesContainer.module.css'
-import CookingAnimation from './UI/CookingAnimation'
+import CookingAnimation from '../UI/animations/CookingAnimation'
 
 export default function RecipesContainer() {
   return (
@@ -15,7 +15,6 @@ export default function RecipesContainer() {
         <RecipeCard />
         <RecipeCard />
       </ScrollContainer>
-
     </div>
     // </div>
   )
